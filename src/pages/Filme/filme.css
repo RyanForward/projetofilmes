@@ -1,0 +1,41 @@
+
+.filme-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.filme-info img{
+    width: 90vw;
+    height: calc(width - 20vw);
+}
+
+.filme-info h1{
+    font-size: calc(width);
+    margin: 20px;
+}
+
+.filme-info h2{
+    font-size: 25pt;
+    margin: 20px;
+}
+
+.filme-info span{
+    font-size: 15pt;
+    margin: 20px;
+}
+
+.avaliacao{
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+.filme-info h3{
+    font-size: 15pt;
+    margin: 20px;
+}
