@@ -39,3 +39,32 @@
     font-size: 15pt;
     margin: 20px;
 }
+
+.area-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-right: 12px;
+    margin-left: 0;
+    font-size: 40px;
+
+
+}
+.area-buttons button{
+    width: 15vw;
+    border-radius: 4px;
+    margin-right: 12px;
+    margin-left: 0;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.area-buttons button:hover{
+    border: 3px solid red;
+}
+
+.area-buttons a{
+    text-decoration: none;
+    color: black;
+}

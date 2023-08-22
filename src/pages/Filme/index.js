@@ -58,7 +58,12 @@ function Filme(){
       <strong className='avaliacao' style={{color: corLetra}}>Avaliação: {filme.vote_average} </strong>
       <h3>Data de lançamento: {filme.release_date}</h3>
       <div className='area-buttons'>
-      
+        <button>Salvar</button>
+        <button>
+          <a href='#'>
+            Trailer
+          </a>
+        </button>
       </div>
     </div>
   )
