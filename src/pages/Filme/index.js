@@ -36,7 +36,7 @@ function Filme(){
     loadFilme();
 
     return () =>{
-    console.log("Componente foi desmontado");  
+    console.log("Componente foi desmontado");
     }
   }, [])
 
@@ -57,7 +57,9 @@ function Filme(){
       <span>{filme.overview}</span>
       <strong className='avaliacao' style={{color: corLetra}}>Avaliação: {filme.vote_average} </strong>
       <h3>Data de lançamento: {filme.release_date}</h3>
-      <a></a>
+      <div className='area-buttons'>
+      
+      </div>
     </div>
   )
 }
