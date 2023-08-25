@@ -1,7 +1,7 @@
 import './filme.css';
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-
+import { toast } from 'react-toastify'
 import api from '../../services/api';
 
 function Filme(){
@@ -22,7 +22,7 @@ function Filme(){
         })
         .then((response) => {
           setFilme(response.data);
-          if(response.data.vote_average > 6){
+          if(response.data.vote_average > 7){
             setCorLetra('green')
           }else{
             setCorLetra('red')
@@ -48,13 +48,13 @@ function Filme(){
     let filmesSalvos = JSON.parse(minhaLista) || [];
     const hasFilme = filmesSalvos.some((filmesSalvo) => filmesSalvo.id == filme.id)
     if(hasFilme){
-      alert(`Você já adicionou este filme a sua lista!`);
+      toast.warn("Esse filme já está na sua lista");
       return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem("@primeflix", JSON.stringify(filmesSalvos));
-    alert("Filme salvo com sucesso!");
+    toast.success("Filme salvo com sucesso!");
   }
 
   if(loading){
