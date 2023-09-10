@@ -32,11 +32,10 @@ function Favoritos(){
 
         }
     }
-
     if(filmes.length > 0){
-        console.log("Há filmes");
         return(
-            filmes.map((filme) =>{
+            <div className="conteiner">
+            {filmes.map((filme) =>{
                 return(
                     <div className='lista-filmes-favoritos'>
                         <h1>{filme.title}</h1>
@@ -49,7 +48,9 @@ function Favoritos(){
                     </div>
                 );
             })
-            )
+        }
+        </div>
+        );
         }else{
         console.log("Não há filmes");
         return(

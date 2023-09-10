@@ -1,107 +1,127 @@
 
-.lista-filmes-favoritos{
-    margin-top: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-}
+@media (min-width:290px){
+    .title{
+        color: white;
+        font-size: 20pt;
+    }
 
-.lista-sem-filmes{
-    color: white;
-    width: 100%;
-    height: calc(100vh - 77px);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10pt;
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+    }
 
-}
+    .lista-filmes-favoritos{
+        position: relative;
+        top: 8vh;
+        margin-top: 10vh;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+    }
 
-.lista-filmes-favoritos h3{
-    font-size: 10pt;
-    margin-top: 5px;
-}
+    .lista-sem-filmes{
+        color: white;
+        width: 100%;
+        height: calc(100vh - 77px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10pt;
 
-.area-botoes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    }
 
-.area-botoes button{
-    margin: 20px;
-    height: 50px;
-    align-items: center;
-}
+    .lista-filmes-favoritos h3{
+        font-size: clamp(0.7em, 0.7em + 1vw, 1.3em);
+        margin-top: 5px;
+    }
 
-.link-to-home{
-    text-transform: lowercase;
-    font-size: 10pt;
-    margin: 20px;
-    align-items: center;
-    border-radius: 0;
-}
+    .area-botoes{
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-.link-to-home:hover{
-    cursor: pointer;
-    background-color:#ff3838 ;
-    border: unset;
-    font-weight: bolder;
-    border: 1px solid red;
-}
+    .link-to-home{
+        text-transform: lowercase;
+        font-size: 10pt;
+        margin: 20px;
+        align-items: center;
+        border-radius: 0;
+    }
 
-.lista-filmes-favoritos img{
-    width: 40vw;
-    height: auto;
-}
+    .link-to-home:hover{
+        cursor: pointer;
+        background-color:#ff3838 ;
+        border: unset;
+        font-weight: bolder;
+        border: 1px solid red;
+    }
 
-.lista-filmes-favoritos h1{
-    font-size: 20pt;
-    text-align: center;
-}
+    .lista-filmes-favoritos img{
+        width: 75vw;
+        height: 55vh;
+        display: block;
+    }
 
-.link-to-details{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    font-size: 12pt;
-    text-align: center;
-    width: 22vw;
-    font-family: Arial, Helvetica, sans-serif;
-    border: unset;
-    align-items: center;
-    height: 100%;
-    font-weight: bolder;
-}
+    .lista-filmes-favoritos h1{
+        font-size: clamp(0.8em, 0.8em + 1vw, 1em);
+        color: white;
+        width: fit-content;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        text-align: center;
+        padding: 8px;
+    }
 
-.link-to-details:hover{
-    cursor: pointer;
-    background-color:#ff3838 ;
-    border: unset;
-    font-weight: bolder;
-    border: 1px solid red;
-}
+    .link-to-details{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(0.8em, 0.8em + 1vw, 1em);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        align-items: center;
+        padding: 2px;
+        height: fit-content;
+        font-weight: bolder;
+    }
 
-.lista-filmes-favoritos button{
-    margin-top: 20px;
-    font-size: 12pt;
-    width: 20vw;
-    height: 2vh;
-    font-family: Arial, Helvetica, sans-serif;
-    border: unset;
-    font-weight: bolder;
-}
+    .link-to-details:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        background-color: rgb(45, 45, 45);
+        border: unset;
+        font-weight: bolder;
+    }
 
-.lista-filmes-favoritos button:hover{
-    cursor: pointer;
-    background-color:#ff3838 ;
-    border: unset;
-    font-weight: bolder;
-    border: 1px solid red;
+    .lista-filmes-favoritos button{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(0.8em, 0.8em + 1vw, 1em);
+        width: 34vw;
+        height: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        font-weight: bolder;
+    }
+
+    .lista-filmes-favoritos button:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        margin-left: 20px;
+        background-color: rgb(45, 45, 45);
+        border: unset;
+        font-weight: bolder;
+    }
 }
