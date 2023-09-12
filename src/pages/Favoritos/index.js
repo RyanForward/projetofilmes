@@ -54,9 +54,11 @@ function Favoritos(){
         }else{
         console.log("Não há filmes");
         return(
+            <div className='container-sem-filmes'>
             <div className='lista-sem-filmes'>
                 <h1>Não há filmes salvos</h1>
                 <Link to="/" className="link-to-home">Voltar para a Página Inicial</Link>
+            </div>
             </div>
         )
     }

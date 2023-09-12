@@ -1,5 +1,5 @@
 
-@media (min-width:290px){
+@media (250px <= width < 600px){
     .title{
         color: white;
         font-size: 20pt;
@@ -12,22 +12,31 @@
 
     .lista-filmes-favoritos{
         position: relative;
-        top: 8vh;
         margin-top: 10vh;
-        margin: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: white;
-        width: 100%;
+        min-width: 89vw;
+        max-width: fit-content;
+    }
+
+    .container-sem-filmes{
+        position: relative;
+        width: 99vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .lista-sem-filmes{
         color: white;
-        width: 100%;
+        max-width: fit-content;
         height: calc(100vh - 77px);
         display: flex;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -124,4 +133,274 @@
         border: unset;
         font-weight: bolder;
     }
+}
+
+@media (600px <= width < 1200px){
+    .title{
+        color: white;
+        font-size: 40pt;
+    }
+
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5vw;
+
+    }
+
+    .lista-filmes-favoritos{
+        position: relative;
+        margin-top: 10vh;
+        margin-right: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: fit-content;
+        text-align: center;
+    }
+
+
+    .lista-filmes-favoritos h3{
+        font-size: clamp(0.7em, 0.7em + 1vw, 1.3em);
+        margin-top: 5px;
+    }
+
+    .area-botoes{
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lista-filmes-favoritos img{
+        width: 30vw;
+        height: 30vh;
+        display: block;
+    }
+
+    .lista-filmes-favoritos h1{
+        font-size: clamp(1em, 1em + 1vw, 1.2em);
+        color: rgb(255, 255, 255);
+        display: flex;
+        width: 30vw;
+        justify-content: center;
+        text-align: center;
+        height: 8vh;
+        align-items: center;
+    }
+
+    .link-to-details{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(1.2em, 1.2em + 1vw, 1.5em);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        align-items: center;
+        padding: 10px;
+        height: fit-content;
+        font-weight: bolder;
+    }
+
+    .link-to-details:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        background-color: rgb(45, 45, 45);
+    }
+
+    .lista-filmes-favoritos button{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(1.2em, 1.2em + 1vw, 1.5em);
+        padding: 10px;
+        width: fit-content;
+        height: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        font-weight: bolder;
+    }
+
+    .lista-filmes-favoritos button:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        margin-left: 20px;
+        background-color: rgb(45, 45, 45);
+        border: unset;
+        font-weight: bolder;
+    }
+
+    /* não há filmes salvos */
+
+    .lista-sem-filmes{
+        color: white;
+        width: 100%;
+        height: calc(100vh - 77px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10pt;
+
+    }
+
+    .link-to-home{
+        text-transform: lowercase;
+        font-size: 2em;
+        margin: 20px;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .link-to-home:hover{
+        cursor: pointer;
+        background-color:#ff3838 ;
+        border: unset;
+        font-weight: bolder;
+        border: 1px solid red;
+    }
+
+}
+
+@media(width > 1200px){
+    .title{
+        color: white;
+    }
+
+    .conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5vw;
+
+    }
+
+    .lista-filmes-favoritos{
+        position: relative;
+        margin-top: 15vh;
+        margin-right: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .lista-filmes-favoritos img{
+        width: 20vw;
+        height: 40vh;
+        display: block;
+    }
+
+    .lista-filmes-favoritos h1{
+        font-size: clamp(2em, 2em + 1vw, 2.2em);
+        color: rgb(255, 255, 255);
+        display: flex;
+        width: 30vw;
+        justify-content: center;
+        text-align: center;
+        height: 8vh;
+        align-items: center;
+    }
+    
+    .lista-filmes-favoritos h3{
+        font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+        margin-top: 5px;
+    }
+
+    
+    .area-botoes{
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-to-details{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(1.2em, 1.2em + 1vw, 1.5em);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        align-items: center;
+        padding: 10px;
+        height: fit-content;
+        font-weight: bolder;
+    }
+
+    .link-to-details:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        background-color: rgb(45, 45, 45);
+    }
+
+    .lista-filmes-favoritos button{
+        color: rgb(255, 255, 255);
+        margin-left: 20px;
+        background-color: rgb(67, 67, 67);
+        font-size: clamp(1.2em, 1.2em + 1vw, 1.5em);
+        padding: 10px;
+        width: fit-content;
+        height: fit-content;
+        font-family: Arial, Helvetica, sans-serif;
+        border: unset;
+        font-weight: bolder;
+    }
+
+    .lista-filmes-favoritos button:hover{
+        cursor: pointer;
+        color: rgb(185, 34, 34);
+        margin-left: 20px;
+        background-color: rgb(45, 45, 45);
+        border: unset;
+        font-weight: bolder;
+    }
+
+    /* não há filmes salvos */
+
+    .lista-sem-filmes{
+        color: white;
+        width: 100%;
+        height: calc(100vh - 77px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10pt;
+
+    }
+
+    .link-to-home{
+        text-transform: lowercase;
+        font-size: 2em;
+        margin: 20px;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .link-to-home:hover{
+        cursor: pointer;
+        background-color:#ff3838 ;
+        border: unset;
+        font-weight: bolder;
+        border: 1px solid red;
+    }
+
 }
